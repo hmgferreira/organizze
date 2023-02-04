@@ -20,3 +20,21 @@ ESTUDAR E APENAS LER
 - REST FULL API
 - O QUE É useState E useEffect DO REACT?
 
+
+
+ESTUDAR 04/02/2023
+- COMPONENTE
+- STATE
+- PROPS
+- CHILDREN
+- USEEFFECT
+- FUNCTION
+- CONTEXT API
+
+
+COMO EXECUTAR O PROJETO?
+npm install 
+npm start
+
+COMO EXECUTAR O DB.JSON
+json-server --watch --port=4000 db.json 

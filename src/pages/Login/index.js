@@ -47,7 +47,6 @@ function Login() {
                         >
                             {({ handleSubmit, handleChange, errors }) => (
                                 <Form>
-                                    
                                     <Form.Group>
                                         <Form.Label>E-mail</Form.Label>
                                         <Form.Control 

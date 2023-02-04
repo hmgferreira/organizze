@@ -35,5 +35,32 @@
       "valor": "1520,01",
       "id": 8
     }
-  ]
+  ],
+  "despesas": [
+    {
+      "descricao": "Teste",
+      "valor": "13,00",
+      "id": 1
+    },
+    {
+      "descricao": "Romana",
+      "valor": "9,99",
+      "id": 2
+    },
+    {
+      "descricao": "Emporio",
+      "valor": "9,99",
+      "id": 3
+    },
+    {
+      "descricao": "Pixel 234",
+      "valor": "150,36",
+      "id": 4
+    }
+  ],
+  "categorias": [],
+  "orcamento": {
+    "limite_despesas": null
+  },
+  "usuarios": []
 }
