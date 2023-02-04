@@ -1,23 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Link
+} from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
+import AuthContext from './contexts/AuthContext';
+import Home from './pages/Home';
+import Receitas from './pages/Receitas';
+import Login from './pages/Login';
 function App() {
+
+  const[logged, setLogged] = useState(false);
+  const[user, setUser] = useState('Admin');
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AuthContext.Provider value={{ logged, setLogged, user, setUser }}>
+        {logged === false 
+          ? 
+          <Login /> 
+          :         
+          <BrowserRouter>
+
+            <Link to="/">Home</Link>
+            <Link to="/receitas">Receitas</Link>
+            <button onClick={() => setLogged(false)}>Sair</button>
+            <Routes>
+              {/* http://localhost:3000/ */}
+              <Route path='/' element={<Home />} />
+
+              {/* http://localhost:3000/receitas */}
+              <Route path='/receitas' element={<Receitas />} />
+            </Routes>
+          </BrowserRouter>
+        }        
+      </AuthContext.Provider>
     </div>
   );
 }

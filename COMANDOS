@@ -1,0 +1,22 @@
+-- CONFIGURACAO: FRONTEND
+npm install
+npm start
+
+npm install bootstrap react-bootstrap
+
+
+
+-- CONFIGURACAO: BACKEND
+npm install -g json-server
+json-server --watch db.json --port=4000
+
+
+
+ESTUDAR E APENAS LER
+- REACTJS
+- AXIOS
+- PACKAGE.json
+- JSON-server
+- REST FULL API
+- O QUE É useState E useEffect DO REACT?
+
