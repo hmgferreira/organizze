@@ -3,17 +3,19 @@ import { Col, Container, Row, Form, Button } from 'react-bootstrap';
 import { Formik, ErrorMessage } from 'formik';
 import * as yup from 'yup';
 import AuthContext from '../../contexts/AuthContext';
+import { useNavigate } from 'react-router-dom';
 
 function Login() {
 
-    const contexts = useContext(AuthContext);
-
+    const { loginApp } = useContext(AuthContext);
+    const navigate = useNavigate();
     function acessar(values){
         console.log(values);
         // CODIGO CONSULTAR API COM AXIOS
         // CODIGO VERIFICAR SENHA
         // CODIGO SE LOGADO ENTAO
-        contexts.setLogged(true);
+        loginApp();
+        navigate('/');
     }
 
     const styles = {

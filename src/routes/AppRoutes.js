@@ -13,31 +13,39 @@ function AppRoutes() {
             path: '/',
             element: <Home />,
             isPrivate: true,
+            isLayout: true
         },
         {
             path: '/receitas',
             element: <Receitas />,
             isPrivate: true,
+            isLayout: true
         },
+        // INICIO DA ROTA CRUD
         {
             path: '/despesas',
             element: <Despesas />,
             isPrivate: true,
+            isLayout: true
         },
         {
             path: '/despesas/novo',
             element: <DespesasForm />,
             isPrivate: true,
+            isLayout: true
         },
         {
             path: '/despesas/edit/:id',
             element: <DespesasForm />,
             isPrivate: true,
+            isLayout: true
         },
+        // FIM DA ROTA CRUD
         {
             path: '/login',
             element: <Login />,
             isPrivate: false,
+            isLayout: false
         }
     ];
 
@@ -47,7 +55,11 @@ function AppRoutes() {
                 <Routes>
                     {listRoutes.map((item, indice) => (
                         <Route key={indice} path={item.path} element={
-                            <PrivateRoute isPrivate={item.isPrivate} component={item.element} />
+                            <PrivateRoute 
+                                isPrivate={item.isPrivate} 
+                                component={item.element} 
+                                isLayout={item.isLayout}
+                            />
                         } />
                     ))}
 

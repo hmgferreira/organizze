@@ -49,7 +49,8 @@ function Despesas() {
 
     return (
         <>
-            <h1>Despesas</h1>
+            <h3>Despesas</h3>
+            <hr />
             <Row>
                 <Col>
                     <FormLabel>Pesquisa: {pesquisa}</FormLabel>
@@ -60,7 +61,7 @@ function Despesas() {
                     />
                     
                 </Col>
-                <Col md={2}>
+                <Col md={2} className="mt-4">
                     <Link to="/despesas/novo">
                         <Button>Nova Despesa</Button>
                     </Link>
