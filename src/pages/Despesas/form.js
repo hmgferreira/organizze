@@ -1,12 +1,13 @@
 import { Button, Row, Col, FormLabel, FormControl } from "react-bootstrap";
 import { Formik } from 'formik';
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
 import api from '../../config/api';
 import { useEffect, useState } from "react";
 
 function DespesasForm() {
 
     const { id } = useParams();
+    const navigate = useNavigate();
     const[data, setData] = useState({
         descricao: '',
         valor: '',
@@ -22,6 +23,7 @@ function DespesasForm() {
             setData(response.data);
             alert("Registro Atualizado com Sucesso.");
         }
+        navigate('/despesas');
     }
 
     async function getData() {

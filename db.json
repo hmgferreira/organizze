@@ -56,6 +56,21 @@
       "descricao": "Pixel 234",
       "valor": "150,36",
       "id": 4
+    },
+    {
+      "descricao": "teste ts",
+      "valor": "12",
+      "id": 5
+    },
+    {
+      "descricao": "Teste ",
+      "valor": "12",
+      "id": 6
+    },
+    {
+      "descricao": "teste ts",
+      "valor": "123",
+      "id": 7
     }
   ],
   "categorias": [],
