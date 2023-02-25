@@ -8,8 +8,8 @@ npm install bootstrap react-bootstrap
 
 -- CONFIGURACAO: BACKEND
 npm install -g json-server
-json-server --watch db.json --port=4000
 
+json-server --watch --port=4000 db.json 
 
 
 ESTUDAR E APENAS LER
@@ -38,3 +38,13 @@ npm start
 
 COMO EXECUTAR O DB.JSON
 json-server --watch --port=4000 db.json 
+
+
+
+npm install cypress
+{
+  "scripts": {
+    "cypress:open": "cypress open"
+  }
+}
+npm run cypress:open

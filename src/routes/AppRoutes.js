@@ -1,9 +1,10 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 import Despesas from "../pages/Despesas";
 import DespesasForm from "../pages/Despesas/form";
 import Home from "../pages/Home";
 import Receitas from "../pages/Receitas";
 import Login from "../pages/Login";
+import Configuracoes from '../pages/Configuracoes';
 import PrivateRoute from "./PrivateRoute";
 
 function AppRoutes() {
@@ -40,6 +41,12 @@ function AppRoutes() {
             isPrivate: true,
             isLayout: true
         },
+        {
+            path: '/configuracoes',
+            element: <Configuracoes />,
+            isPrivate: true,
+            isLayout: true
+        },
         // FIM DA ROTA CRUD
         {
             path: '/login',
@@ -51,7 +58,7 @@ function AppRoutes() {
 
     return (
         <>
-            <BrowserRouter>
+            <HashRouter>
                 <Routes>
                     {listRoutes.map((item, indice) => (
                         <Route key={indice} path={item.path} element={
@@ -79,7 +86,7 @@ function AppRoutes() {
 
                     <Route path='/login' element={<Login />} /> */}
                 </Routes>
-            </BrowserRouter>
+            </HashRouter>
         </>
     )
 }

@@ -34,11 +34,56 @@
       "descricao": "PIXELS",
       "valor": "1520,01",
       "id": 8
+    },
+    {
+      "descricao": "oi",
+      "valor": "10",
+      "id": 9
+    },
+    {
+      "descricao": "Teste Cypress 1",
+      "valor": "9,99",
+      "id": 10
+    },
+    {
+      "descricao": "Teste Cypress 2",
+      "valor": "9,99",
+      "id": 11
+    },
+    {
+      "descricao": "Teste Cypress 2",
+      "valor": "9,99",
+      "id": 12
+    },
+    {
+      "descricao": "Teste Cypress 2",
+      "valor": "9,99",
+      "id": 13
+    },
+    {
+      "descricao": "Teste Cypress 2",
+      "valor": "9,99",
+      "id": 14
+    },
+    {
+      "descricao": "Teste Cypress 2",
+      "valor": "9,99",
+      "id": 15
+    },
+    {
+      "descricao": "Teste Cypress 2",
+      "valor": "9,99",
+      "id": 16
+    },
+    {
+      "descricao": "Teste Cypress 2",
+      "valor": "9,99",
+      "id": 17
     }
   ],
   "despesas": [
     {
-      "descricao": "Teste",
+      "descricao": "Teste 123123",
       "valor": "13,00",
       "id": 1
     },
@@ -77,5 +122,6 @@
   "orcamento": {
     "limite_despesas": null
   },
-  "usuarios": []
+  "usuarios": [],
+  "configuracoes": []
 }
